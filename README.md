@@ -23,7 +23,7 @@ CRUD System using data from Spotify API.
 
 The database E/R diagram is shown here.
 
-![AWS Fraud Detection](https://user-images.githubusercontent.com/98544428/165623185-56d4eb83-0a72-4c8c-a42a-0270f4e1c24b.png)
+![ER Diagram](ER.png)
 
 ## 3. Installing
 Install using [pip](https://pip.pypa.io/en/stable/quickstart/):
