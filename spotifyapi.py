@@ -12,9 +12,11 @@ pip install spotipy
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 import pandas as pd
+from dotenv import load_dotenv
+load_dotenv()
 
-cid = 'f65b2ff3c43f4009b3a1ff5c2361e298'
-secret = 'd6734c3fd0b64f57bf0a92576ab4bf46'
+cid = os.environ.get('SPOTIPY_CLIENT_ID')
+secret = os.environ.get('SPOTIPY_CLIENT_SECRET')
 client_credentials_manager = SpotifyClientCredentials(client_id=cid, client_secret=secret)
 sp = spotipy.Spotify(client_credentials_manager = client_credentials_manager)
 rihanna_uri = 'spotify:artist:5pKCCKE2ajJHZ9KAiaK11H?si=ZM9pI-KfTaOb5vE0VcbcdQ'
@@ -222,7 +224,7 @@ df_tracks
 from sqlalchemy import create_engine
 import psycopg2 
 
-conn_string = 'postgresql://postgres:4596@localhost:5433/flaskapi'
+conn_string = 'postgresql://{USER}:{PASSWORD}@localhost:5433/{database}'
 
 final = df_tracks
 
