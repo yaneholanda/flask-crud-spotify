@@ -11,8 +11,8 @@ def get_db_connection():
     conn = psycopg2.connect(host='localhost',
                             database='spotipy',
                             user="postgres",
-                            password=4596,
-                            port=5433)
+                            password='your_password',
+                            port=5432)
     return conn
 
 

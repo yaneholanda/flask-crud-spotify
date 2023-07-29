@@ -7,7 +7,7 @@ Original file is located at
     https://colab.research.google.com/drive/1G3UTuwJB4QoIhnRSIHcqMLJH3vvugpQ7
 """
 
-pip install spotipy
+#pip install spotipy
 
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -224,7 +224,7 @@ df_tracks
 from sqlalchemy import create_engine
 import psycopg2 
 
-conn_string = 'postgresql://{USER}:{PASSWORD}@localhost:5433/{database}'
+conn_string = 'postgresql://{USER}:{PASSWORD}@localhost:5432/{database}'
 
 final = df_tracks
 
