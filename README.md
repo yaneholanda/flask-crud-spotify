@@ -29,7 +29,7 @@ The database E/R diagram is shown here.
 Install using [pip](https://pip.pypa.io/en/stable/quickstart/):
 
 ```
-$ pip install flask flask-sqlalchemy psycopg2
+$ pip install -r requirements.txt
 ```
 
 ## 4. Running
